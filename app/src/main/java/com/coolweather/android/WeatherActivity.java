@@ -152,7 +152,7 @@ public class WeatherActivity extends AppCompatActivity {
 
         Intent intent  = new Intent(this, AutoUpdateService.class);
         startService(intent);
-        
+
         String cityName = weather.basic.cityName;
         String updateTime = weather.basic.update.updateTime.split(" ")[1];
         String degree = weather.now.temperature + "℃";
